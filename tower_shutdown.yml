@@ -1,0 +1,8 @@
+---
+- hosts: tower
+  gather_facts: false
+
+  tasks:
+  - name: Shutdown tower servers
+    command: ansible-tower-service stop
+...
